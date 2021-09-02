@@ -3,7 +3,9 @@
     margin: 0 ;
     box-sizing: border-box;
     text-decoration: none;
+
 }
+
 
 
 .nav{
@@ -39,6 +41,7 @@
 }
 .nav__li a{
     cursor: pointer;
+    transition: all 1;
 }
 .nav__ul .button{
     background-color: rgb(31, 31, 31);
@@ -54,5 +57,19 @@
 }
 
 .button a:hover{
+    color: #fff;
+}
+
+.nav__li{
+    transition: all .5s;
+}
+.nav__li:hover{
+    transform: translateY(-7px);
+}
+.nav__li a:visited{
+    color: rgb(0, 0, 0);  
+  }
+
+.button_a:visited{
     color: #fff;
 }
