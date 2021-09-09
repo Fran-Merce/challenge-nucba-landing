@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url(var.css);
 
 
 
-
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #99c1de;
+    background-color: var(--main-color);
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     cursor: default;
@@ -49,12 +49,13 @@
 .nav__li a {
     cursor: pointer;
     transition: all 1;
+    color: rgb(0, 0, 0); ;
 }
 
 .nav__ul .button {
     background-color: rgb(31, 31, 31);
     border-radius: 25px;
-    color: #99c1de;
+    color: var(--main-color);
     padding: .6em;
 
 }
@@ -76,12 +77,10 @@
     transform: translateY(-7px);
 }
 
-.nav__li a:visited {
-    color: rgb(0, 0, 0);
-}
+
 
 .button_a:visited {
-    color: #fff;
+    color: var(--main-color);
 }
 
 /* ---------------------------------HEADER------------------------------------- */
@@ -107,7 +106,7 @@
     transform: translateY(-20px);
     font-size: 4.5em;
     color: rgb(248, 248, 248);
-    text-shadow: #99c1de 5px 3px;
+    text-shadow: var(--main-color) 5px 3px;
     text-align: center;
 }
 
@@ -129,7 +128,7 @@
 .img-about-container {
     width: 50%;
     height: 50%;
-    margin-right: 1em;
+    margin-right: 16;
 }
 
 .about__img {
@@ -145,24 +144,24 @@
     width: 50%;
     height: 50%;
     margin-left: 4em;
-    padding-left: 1em;
+    padding-left: 16px;
 }
 
 .about__title {
     width: 60%;
     font-size: 3em;
     text-align: left;
-    color: #99c1de;
+    color: var(--main-color);
     text-shadow: #fffdfd 5px 5px;
 
 
 }
 
 .about__text {
-    width: 60%;
+    max-width: 600px;
     font-size: 1em;
-    margin: 1em 0;
-    margin-bottom: 1em;
+    margin: 16px 0;
+    margin-bottom: 16px;
     color: rgb(82, 82, 82);
     font-family: 'Balsamiq Sans', cursive;
 }
@@ -175,10 +174,10 @@
 .buttons a {
     display: inline-block;
     margin: 15px;
-    padding: .7em;
-    background-color: #99c1de;
+    padding: 10px ;
+    background-color: var(--main-color);
     border-radius: 25px;
-    width: 35%;
+    min-width: 35%;
     text-decoration: none;
     color: #fff;
     font-family: 'Balsamiq Sans', cursive;
@@ -188,8 +187,8 @@
 .buttons a:hover {
 
     background-color: #ffffff;
-    color: #99c1de;
-    box-shadow: 0px 0px 0px 2px #99c1de inset;
+    color: var(--main-color);
+    box-shadow: 0px 0px 0px 2px var(--main-color) inset;
 
 
 }
