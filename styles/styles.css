@@ -33,7 +33,6 @@
 }
 
 .nav__ul {
-
     margin-right: 2em;
 }
 
@@ -49,7 +48,7 @@
 .nav__li a {
     cursor: pointer;
     transition: all 1;
-    color: var(--main-color) ;
+    color: black;
 }
 
 .nav__ul .button {
@@ -79,7 +78,7 @@
 
 
 
-.button_a:visited {
+a.button_a{
     color: var(--main-color);
 }
 
