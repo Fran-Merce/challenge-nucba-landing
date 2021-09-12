@@ -3,7 +3,7 @@
 
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,7 +23,7 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     cursor: default;
-    
+
 }
 
 .nav .logo {
@@ -41,7 +41,7 @@
     display: inline-block;
     margin: .5em;
     padding: .2em;
-    
+
     font-size: 1em;
 
 }
@@ -79,7 +79,7 @@
 
 
 
-a.button_a{
+a.button_a {
     color: var(--main-color);
 }
 
@@ -106,8 +106,9 @@ a.button_a{
 .header__title h2 {
     transform: translateY(-20px);
     font-size: 4.5em;
-    
-    color: var(--main-color);;
+
+    color: var(--main-color);
+    ;
     text-shadow: rgb(255, 255, 255) 5px 3px;
     text-align: center;
 }
@@ -125,6 +126,7 @@ a.button_a{
     width: 100%;
     height: 700px;
     background-color: #f0f8ff;
+    border-bottom: 3px rgb(255, 255, 255) solid;
 }
 
 .img-about-container {
@@ -159,9 +161,11 @@ a.button_a{
 
 
 }
-.about__title h2 span{
+
+.about__title h2 span {
     display: block;
 }
+
 .about__text {
     max-width: 600px;
     font-size: 1em;
@@ -179,7 +183,7 @@ a.button_a{
 .buttons a {
     display: inline-block;
     margin: 15px;
-    padding: 10px ;
+    padding: 10px;
     background-color: var(--main-color);
     border-radius: 25px;
     min-width: 35%;
@@ -196,4 +200,149 @@ a.button_a{
     box-shadow: 0px 0px 0px 2px var(--main-color) inset;
 
 
+}
+
+
+.section2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-bottom: 3px rgb(255, 255, 255) solid;
+}
+
+
+.section2 .nosotros-container {
+    width: 70%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nosotros-container div {
+    max-width: 60%;
+
+
+}
+
+.nosotros-container div h2 {
+    font-size: 4.5em;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    color: var(--main-color);
+    letter-spacing: 6px;
+
+}
+
+
+.nosotros-container div .nosotros__info {
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: .5em;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(77, 77, 77);
+    max-width: 80%;
+}
+
+.nosotros__button {
+    margin-top: 1em;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgb(82, 82, 82);
+    ;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(208, 231, 250);
+    border-top: 3px solid rgb(255, 255, 255);
+    color: #000000;
+    font-family: sans-serif;
+
+}
+
+footer p {
+    font-size: .7em;
+}
+
+.cards {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20rem;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    transition: color 1s;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+    transition: all 1s;
+    z-index: 1;
+}
+
+.card:hover::after {
+    width: 100%;
+    color: #fff;
+}
+
+.card:hover {
+    color: #fff;
+}
+
+.card img {
+    width: 50%;
+    height: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cards img,
+.card__name,
+.card__info {
+    margin: 0 10px;
+    padding: 10px 5px;
+    z-index: 20;
+}
+
+.card__info{
+    z-index: 20;
+}
+
+.c {
+    text-align: center;
+    font-size: 2em;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    padding-top: 2em;
 }
