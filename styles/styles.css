@@ -297,9 +297,6 @@ a.button_a {
 
 .card:hover::after {
     width: 100%;
-    
-    background: rgb(231,231,231);
-    background: linear-gradient(163deg, rgb(187, 187, 187) 0%, rgb(233, 233, 233) 47%, rgba(171,211,240,1) 100%);
     border-radius: 25px;
 }
 
