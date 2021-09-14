@@ -469,6 +469,9 @@ footer p {
     h2.nosotros__title {
         font-size: 3em;
     }
+    .about,{
+        height: 500px;
+    }
 }
 
 @media(max-width:420px) {
