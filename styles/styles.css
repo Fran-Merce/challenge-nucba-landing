@@ -175,18 +175,27 @@ a.button_a {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.about__info .buttons {
+.about__info {
     width: 50%;
+
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: s;
+    width: 100%;
     text-align: center;
 }
 
 .buttons a {
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
     padding: 10px;
     background-color: var(--main-color);
     border-radius: 25px;
-    min-width: 35%;
+
+    width: 144px;
     text-decoration: none;
     color: #fff;
     font-family: 'Balsamiq Sans', cursive;
@@ -228,7 +237,7 @@ a.button_a {
 
 }
 
-.nosotros-container div h2 {
+h2.nosotros__title {
     font-size: 4.5em;
     font-family: 'Bebas Neue', cursive;
     font-weight: 700;
@@ -244,7 +253,7 @@ a.button_a {
     margin-top: .5em;
     font-family: 'Balsamiq Sans', cursive;
     color: rgb(77, 77, 77);
-    max-width: 80%;
+
 }
 
 .nosotros__button {
@@ -259,7 +268,7 @@ a.button_a {
 
 .cards {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -279,7 +288,8 @@ a.button_a {
     z-index: 20;
     transition: color 1s;
     color: #000000;
-    
+    margin: 10px;
+
 }
 
 .card::after {
@@ -288,8 +298,8 @@ a.button_a {
     left: 0;
     width: 6px;
     height: 100%;
-    background: rgb(231,231,231);
-    background: linear-gradient(173deg, rgb(196, 196, 196) 0%, rgb(255, 255, 255) 47%, rgba(171,211,240,1) 100%);
+    background: rgb(231, 231, 231);
+    background: linear-gradient(173deg, rgb(196, 196, 196) 0%, rgb(255, 255, 255) 47%, rgba(171, 211, 240, 1) 100%);
     border-radius: 25px;
     transition: all 1s;
     z-index: 1;
@@ -341,8 +351,8 @@ a.button_a {
     padding-top: 2em;
     font-family: 'Roboto Mono', monospace;
     color: var(--main-color);
-    
-    
+
+
 }
 
 .card__work {
@@ -354,7 +364,7 @@ a.button_a {
     font-size: .9em;
     z-index: 20;
     font-family: 'Roboto Mono', monospace;
-    
+
 }
 
 footer {
@@ -372,4 +382,103 @@ footer {
 
 footer p {
     font-size: .7em;
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+    .nosotros__info {
+        max-width: 100%;
+    }
+
+    .nosotros-container {
+        width: 80%;
+    }
+
+    .nosotros-container div {
+        max-width: 75%;
+    }
+
+    .img-about-container {
+        width: 45%;
+        height: 45%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1160px) {
+    h2.about__title {
+        width: 80%;
+    }
+
+    .about__text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .about__img,
+    .img-about-container {
+        display: none;
+    }
+
+    .about__info {
+        width: 75%;
+    }
+
+    .section2 .nosotros-container {
+        width: 80%;
+    }
+
+    .section3-title {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+@media(max-width:768px) {
+    .header__title {
+        font-size: .7em;
+    }
+
+    .section2 .nosotros-container {
+        width: 90%;
+    }
+
+    .nosotros-container div .nosotros__info {
+        font-size: .9em;
+        text-align: start;
+    }
+
+    .about__info {
+        margin-left: 0;
+    }
+
+    h2.about__title {
+        width: 100%;
+        font-size: 2.7em;
+    }
+
+    .about__text {
+        font-size: .9em;
+    }
+
+    h2.nosotros__title {
+        font-size: 3em;
+    }
+}
+
+@media(max-width:420px) {
+    h2.about__title {
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .buttons a {
+        padding: 7px;
+        font-size: .9em;
+    }
 }
