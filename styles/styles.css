@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url(var.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
     padding: 0;
@@ -55,6 +55,7 @@
     transform: translateY(-5px);
 }
 .menu a:hover{
+    color: #fff
 }
 .menu li a{
     display: block;
@@ -226,6 +227,7 @@ h2.nosotros__title {
     color: var(--main-color);
     letter-spacing: 6px;
 
+
 }
 
 
@@ -235,6 +237,7 @@ h2.nosotros__title {
     margin-top: .5em;
     font-family: 'Balsamiq Sans', cursive;
     color: rgb(77, 77, 77);
+    max-width: 80%;
 
 }
 
@@ -321,18 +324,20 @@ h2.nosotros__title {
     position: relative;
     font-size: .9em;
     width: 95%;
-    font-weight: 700;
-    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    
 }
 
 .section3-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 4.5em;
     background-color: #f0f8ff;
     font-family: sans-serif;
     padding-top: 2em;
     color: var(--main-color);
-
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
 
 }
 
@@ -446,21 +451,9 @@ footer p {
         height: 500px;
     }
 
-}
-
-@media(max-width:420px) {
-    h2.about__title {
-        width: 100%;
-        font-size: 2.3em;
+    h2.section3-title{
+        font-size: 3em;
     }
-
-    .buttons a {
-        padding: 7px;
-        font-size: .9em;
-    }
-}
-
-@media (max-width:768px){
     .nav-container label{
         display: block;
         margin: 6px;
@@ -495,4 +488,35 @@ footer p {
         margin: 0;
         width: 100%;
     }
+
+    .nosotros-container div .nosotros__info{
+        max-width: 100%;
+    }
+
+}
+
+@media(max-width:420px) {
+    h2.about__title {
+        width: 100%;
+        font-size: 2.3em;
+    }
+
+    .buttons a {
+        padding: 7px;
+        font-size: .9em;
+    }
+
+    .nosotros-container div{
+        max-width: 90%;
+    }
+
+    .about__info{
+        width:90% ;
+        
+        padding: 0;
+    }
+}
+
+@media (max-width:768px){
+    
 }
